@@ -42,6 +42,12 @@ final class ShimmeringMaskLayer: CAGradientLayer {
         fadeLayer.backgroundColor = UIColor.white.cgColor
         addSublayer(fadeLayer)
     }
+    
+    override init(layer: Any) {
+        super.init()
+        fadeLayer.backgroundColor = UIColor.white.cgColor
+        addSublayer(fadeLayer)
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
